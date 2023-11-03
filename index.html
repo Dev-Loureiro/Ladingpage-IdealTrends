@@ -8,116 +8,173 @@
     <link rel="icon" type="image/x-icon" href="./imgs/Logo Icone Verde.png">
     <meta>
     <title>Germinne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
 
 </head>
 
 <body>
-    <main>
-        
-    <header>
-        <div>
-            telefone
+
+
+    <div class="vw100 color-contact">
+        <div class="contact centralizar">
+            <p>(11) 1234-1234</p>
+            <p>(11) 1234-1234</p>
         </div>
+    </div>
+
+    <header class="vw100 color-header centralizar">
+
         <div class="header">
 
-            <div>
-                <img src="" alt="">
+            <div class="logo">
+                <img src="./imgs/Logo Icone Verde.png" alt="logo-germine">
             </div>
 
             <nav class="navHeader">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li>
-                        <nav class="navHeader2">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">EMPRESA</a>
+                        <div class="submenu-1">
                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">EMPRESA</a></li>
+                                <li><a href="#">CLIENTES</a></li>
+                                <li class="hover-sub"><a href="#">CONTATO</a>
+                                    <div class="submenu-2">
+                                        <ul>
+                                            <li><a href="#">HOME</a></li>
+                                            <li><a href="#">EMPRESA</a></li>
+                                            <li><a href="#">CLIENTES</a></li>
+                                            <li><a href="#">CONTATO</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
-                        </nav>
+                        </div>
                     </li>
+                    <li><a href="#">CLIENTES</a></li>
+                    <li><a href="#">CONTATO</a></li>
                 </ul>
             </nav>
-
         </div>
+
     </header>
 
-    <div class="carrosel">
-        carrosel
-    </div>
+    <main class="align">
 
-    <article class="mainContent">
 
-        <div>
-            <h2>
-                titulo
-            </h2>
+        <!-- carousel  -->
+        <div class="vw100 color-carousel ">
+            <div class="centralizar ">
 
-            <p> subtitulo </p>
+                <div id="carouselExample" class="carousel slide  ">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imgs/Banner-1.png" class="" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imgs/Banner-2.png" class="" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
 
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-
-            <p></p>
-
+            </div>
         </div>
+        <!-- carousel -->
 
-        <div>
-            <img src="" alt="">
-        </div>
+        <!-- primeiro artigo -->
+        <article class="mainContent centralizar mt-3 mb-5">
 
-    </article>
+            <div>
+                <h2>
+                    GERMINNE BOX
+                </h2>
 
-    <section class="highlightBox">
+                <p> Beneficios: </p>
 
-        <article>
-            <a href="">
-            <img src="" alt="">
-            <p></p>
-            
+                <ul class="contentArticle">
+                    <li>Produto de Qualidade</li>
+                    <li>Produto Sustentavel</li>
+                    <li>Cultive em qualquer lugar</li>
+                </ul>
+
+                <p>Adiquira já o seu!</p>
+
+            </div>
+
+            <div class="product">
+                <img src="./imgs/germinebox.png" alt="">
+            </div>
+
         </article>
+        <!-- primeiro artigo -->
 
-        <a>
-            <img src="" alt="">
-            <p></p>
-        </a>
+        <!-- segundo artigo -->
+        <section class="highlightBox centralizar">
 
-        <article>
-            <img src="" alt="">
-            <p></p>
-        </article>
+            <h2 class="mb-3">CONHEÇA NOSSO BLOG</h2>
 
-        <article>
-            <img src="" alt="">
-            <p></p>
-        </article>
+            <div class="boxImgs">
+                <a href="">
+                    <img src="./imgs/box-1.png" alt="">
+                    <p>O Telhado Verde- Shopping Eldorado</p>
+                </a>
 
-    </section>
+                <a href="">
+                    <img src="./imgs/box-2.png" alt="">
+                    <p>Aproveitando ao Máximo os Frutos da Colheita</p>
+                </a>
 
-    <footer class="footer">
+                <a href="">
+                    <img src="./imgs/box-3.png" alt="">
+                    <p>A Base para uma Plantação Saudável!</p>
+                </a>
 
-        <nav class="navFooter">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
+                <a href="">
+                    <img src="./imgs/box-4.png" alt="">
+                    <p>PROTEGENDO A SAÚDE DAS PLANTAS </p>
+                </a>
+            </div>
 
-        <h2>FOOTER</h2>
-
-    </footer>
+        </section>
+        <!-- segundo artigo -->
 
     </main>
 
+    <footer class="color-footer">
+        <div class="footer centralizar">
+            <nav class="navFooter">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">EMPRESE</a></li>
+                    <li><a href="#">CLIENTES</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="textFooter">
+                <h2>FOOTER</h2>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

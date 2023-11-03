@@ -1,0 +1,293 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: var(--body-medium);
+    color: var(--font-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+li, ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary-color: #51B27E;
+    --footer-color: #2C6345;
+    --cta-color: #B67DFF;
+
+    --font-color: #353535;
+    --background: #fff;
+    --background-verde: #E5F5EB;
+
+    --semibold: 600;
+
+    
+    --title: 1.5rem;
+
+    --subtitle: 1.125rem;
+
+    --body-large: 1.25rem;
+    --body-medium: 1rem;
+    --body-small: 0.75rem;
+
+}
+
+
+body {
+    background-color: var(--background);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* contato */
+.contact {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 3vh;
+}
+
+.contact p {
+    color: #fff;
+    font-size: var(--body-small);
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.color-contact {
+    background-color: var(--footer-color);
+}
+
+
+
+/* header */
+.header {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    width: 20vw;
+    max-width: 65px;
+}
+
+.logo img {
+    height: auto;
+    width: 46px;
+    height: 63px;
+}
+
+.navHeader {
+    text-align: center;
+    align-self: flex-end;
+    padding: 10px;
+}
+
+.navHeader ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.navHeader ul li {
+    width: 120px;
+    z-index: 1;
+}
+
+.navHeader ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.submenu-1 {
+    display: none;
+}
+
+.navHeader ul li:hover .submenu-1 {
+    display: block;
+    position: absolute;
+    background-color: var(--primary-color);
+}
+
+.navHeader ul li:hover .submenu-1 ul {
+    display: block;
+
+}
+
+.navHeader ul li:hover .submenu-1 ul li{
+    text-align: center;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.navHeader ul li:hover .submenu-1 ul li a{
+    color: #fff;
+}
+
+.navHeader ul li:hover .submenu-1 ul li:hover{
+    background-color: var(--footer-color);
+}
+
+.submenu-2 {
+    display: none;
+}
+
+.hover-sub:hover .submenu-2 {
+    display: block;
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 105px;
+    background-color: var(--primary-color);
+}
+
+
+.color-header {
+    border-bottom: 3px solid var(--primary-color);  
+}
+
+
+
+.color-carousel {
+    background-color: var(--background-verde);
+}
+
+.carousel {
+    padding: 0px;
+}
+
+.carousel img {
+    width: 894px;
+    height: 290px;
+}
+
+
+
+.mainContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainContent h2 {
+    font-size: var(--title);
+    font-weight: var(--semibold);
+}
+
+.mainContent ul {
+    line-height: 1.2em;
+}
+
+.contentArticle {
+    margin: 0;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.product img {
+    width: 325px;
+    height: 212px;
+}
+
+
+
+.highlightBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.highlightBox h2 {
+    font-size: var(--title);
+    font-weight: var(--semibold);
+}
+
+.boxImgs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxImgs img {
+    width: 196px;
+    height: 163px;
+}
+
+.boxImgs a {
+    width: 196px;
+    text-decoration: none;
+}
+
+.boxImgs p {
+    font-size: var(--body-medium); 
+    margin-top: 10px; 
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+}
+
+.footer .textFooter {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.textFooter h2 {
+    font-size: var(--subtitle);
+    font-weight: 700;
+}
+
+.color-footer {
+    background-color: var(--footer-color);
+}
+
+.navFooter ul {
+    display: flex;
+    justify-content:center;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.navFooter ul li {
+    color: #fff;
+    margin: 0 12px;
+}
+
+.navFooter ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: var(--subtitle);
+}
+
+
+
+.vw100 {
+    width: 100vw;
+}
+
+.centralizar {
+    margin: auto;
+    width: 894px;
+}
+
+.align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
